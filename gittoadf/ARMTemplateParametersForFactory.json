@@ -4,6 +4,9 @@
 	"parameters": {
 		"factoryName": {
 			"value": "gittoadf"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
 		}
 	}
 }

@@ -12,8 +12,8 @@
 				}
 			},
 			{
-				"name": "Wait2",
-				"type": "Wait",
+				"name": "Set variable1",
+				"type": "SetVariable",
 				"dependsOn": [
 					{
 						"activity": "Wait1",
@@ -22,12 +22,22 @@
 						]
 					}
 				],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
 				"userProperties": [],
 				"typeProperties": {
-					"waitTimeInSeconds": 1
+					"variableName": "orders",
+					"value": "furniture"
 				}
 			}
 		],
+		"variables": {
+			"orders": {
+				"type": "String"
+			}
+		},
 		"annotations": []
 	}
 }
